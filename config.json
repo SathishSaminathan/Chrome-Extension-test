@@ -1,0 +1,200 @@
+{
+	"URL": "https://api.rodo.com/prod/quote/quote/quotebyVIN",
+	"FIRST_NAME": "Jason",
+	"LAST_NAME": "Burrows",
+	"ZIP_CODE": "10018",
+	"SELECT_WEBSITE": "Please select at least one website",
+	"ENTER_VIN_NUMBER": "Please enter valid VIN number",
+	"CARMAX": {
+		"URL": "https://www.carmax.com/sell-my-car",
+		"CARMAX_DEFAULT_VALUE_OBJ": {
+			"engine": { "values": ["Sell", "TradeIn", "NotSure"], "defaultValue": "Sell" },
+			"drive": { "values": ["2WD", "4WD/AWD"], "defaultValue": "2WD" },
+			"transmission": { "values": ["Automatic", "Manual"], "defaultValue": "Manual" },
+			"vehicle_condition": { "values": ["Excellent", "Very good", "Good", "Fair"], "defaultValue": "Good" },
+			"has_been_in_accident": { "values": ["Yes", "No"], "defaultValue": "Yes" },
+			"fender_benders": { "values": ["0", "1", "2 or more"], "defaultValue": "0" },
+			"serious_accident": { "values": ["0", "1", "2 or more"], "defaultValue": "1" },
+			"exterior_damage": { "values": ["Yes", "No"], "defaultValue": "No" },
+			"flood_damage": { "values": ["Yes", "No"], "defaultValue": "No" },
+			"vehicle_smoked_in": { "values": ["Yes", "No"], "defaultValue": "No" },
+			"mechanical_defect": { "values": ["Yes", "No"], "defaultValue": "Yes" },
+			"vehicle_inoperable": { "values": ["Yes", "No"], "defaultValue": "No" },
+			"engine_issues": { "values": ["Yes", "No"], "defaultValue": "No" },
+			"transmission_issues": { "values": ["Yes", "No"], "defaultValue": "No" },
+			"warning_lights_displayed": { "values": ["Check engine", "4x4 needs service", "ABS/Brakes", "Other"], "defaultValue": "Check engine" },
+			"following_apply": {
+				"values": ["Issues with brakes", "Issues with steering", "Issues with suspension", "Other major mechanical concerns"],
+				"defaultValue": "Issues with steering"
+			},
+			"odometer_broken_replaced": { "values": ["Yes", "No"], "defaultValue": "No" },
+			"body_work": { "values": ["Yes 1", "Yes 2", "Yes 3+", "No"], "defaultValue": "No" },
+			"rust_hail_damage": { "values": ["Yes", "No"], "defaultValue": "Yes" },
+			"select_all_apply": { "values": ["Major Hail Damage", "Major Rust Damage"], "defaultValue": "Major Rust Damage" },
+			"interior_parts_broken": { "values": ["Yes 1", "Yes 2", "Yes 3+", "No"], "defaultValue": "No" },
+			"interior_stains": { "values": ["Yes 1", "Yes 2", "Yes 3+", "No"], "defaultValue": "No" },
+			"tyre_condition": { "values": ["Yes 1 or 2", "Yes 3 or 4", "No"], "defaultValue": "No" },
+			"car_keys": { "values": ["2 or more", "1"], "defaultValue": "1" },
+			"after_market_modifications": { "values": ["Yes", "No"], "defaultValue": "Yes" },
+			"suspension_changed": { "values": ["Yes", "No"], "defaultValue": "Yes" },
+			"engine_modification": { "values": ["Yes", "No"], "defaultValue": "Yes" },
+			"other_issue": { "values": ["Yes", "No"], "defaultValue": "Yes" },
+			"convertible_top_broken": { "values": ["No/Not applicable", "Yes"], "defaultValue": "No/Not applicable" },
+			"air_conditional_problem": { "values": ["Yes", "No"], "defaultValue": "No" },
+			"equipment_missing": { "values": ["Yes", "No"], "defaultValue": "No" }
+		},
+		"CARMAX_FIELDS_TO_BE_CHECKED": [
+			"engine",
+			"drive",
+			"transmission",
+			"vehicle_condition",
+			"mileage",
+			"has_been_in_accident",
+			"fender_benders",
+			"serious_accident",
+			"exterior_damage",
+			"flood_damage",
+			"vehicle_smoked_in",
+			"mechanical_defect",
+			"vehicle_inoperable",
+			"engine_issues",
+			"transmission_issues",
+			"warning_lights_displayed",
+			"following_apply",
+			"odometer_broken_replaced",
+			"body_work",
+			"rust_hail_damage",
+			"select_all_apply",
+			"interior_parts_broken",
+			"interior_stains",
+			"tyre_condition",
+			"car_keys",
+			"after_market_modifications",
+			"suspension_changed",
+			"engine_modification",
+			"other_issue",
+			"convertible_top_broken",
+			"air_conditional_problem",
+			"equipment_missing"
+		],
+		"CARMAX_INPUT_FIELDS": ["mileage"]
+	},
+	"ALGONATION": {
+		"URL": "https://algonation.com/",
+		"ALGONATION_DEFAULT_VALUE_OBJ": {},
+		"ALGONATION_FIELDS_TO_BE_CHECKED": ["mileage"],
+		"ALGONATION_INPUT_FIELDS": ["mileage"]
+	},
+	"CARVANA": {
+		"URL": "https://www.carvana.com/sell-my-car/getoffer/basics?vin=",
+		"CARVANA_DEFAULT_VALUE_OBJ": {
+			"zip_code": { "defaultValue": "85021" },
+			"transaction_type": { "values": ["Sell", "Trade In", "Not Sure"], "defaultValue": "Sell" },
+			"color": {
+				"values": [
+					"Black",
+					"Gray",
+					"Silver",
+					"White",
+					"Blue",
+					"Purple",
+					"Pink",
+					"Red",
+					"Maroon",
+					"Brown",
+					"Beige",
+					"Gold",
+					"Orange",
+					"Yellow",
+					"Green",
+					"Other"
+				],
+				"defaultValue": "Other"
+			},
+			"has_been_in_accident": { "values": ["no accidents", "1 accident", "2+ accident"], "defaultValue": "no accidents" },
+			"drivableCondition": { "values": ["drivable", "not drivable"], "defaultValue": "drivable" },
+			"isCarModified": { "values": ["modifications", "no modifications"], "defaultValue": "no modifications" },
+			"vehicle_smoked_in": { "values": ["smoked in", "not smoked in"], "defaultValue": "not smoked in" },
+			"vehicle_condition": { "values": ["pretty great", "just okay", "kind of rough"], "defaultValue": "just okay" },
+			"car_keys": { "values": ["1 key", "2+ keys"], "defaultValue": "1 key" },
+			"loan_or_lease": { "values": ["loan", "lease", "neither"], "defaultValue": "neither" },
+			"exterior_damage": {
+				"values": ["Minor damage", "Fading paint", "Dents or Scrapes", "Rust", "Hail Damage", "No Exterior Damage"],
+				"defaultValue": "No Exterior Damage"
+			},
+			"mechanical_defect": {
+				"values": ["Engine", "Transmission", "Air Conditioning", "Electrical", "No Mechanical or Electrical Issues"],
+				"defaultValue": "No Mechanical or Electrical Issues"
+			}
+		},
+		"CARVANA_FIELDS_TO_BE_CHECKED": [
+			"mileage",
+			"transaction_type",
+			"loan_or_lease",
+			"loan_company",
+			"remaining_balance",
+			"lease_payoff_amount",
+			"lease_company",
+			"vehicle_condition",
+			"color",
+			"after_market_modifications",
+			"has_been_in_accident",
+			"mechanical_defect",
+			"exterior_damage",
+			"car_keys",
+			"isCarModified",
+			"vehicle_smoked_in",
+			"drivableCondition",
+			"monthly_payment"
+		],
+		"CARVANA_STEPS": [
+			{
+				"pageName": "Basics",
+				"conditions": "basics"
+			},
+			{
+				"pageName": "Features",
+				"conditions": "features"
+			},
+			{
+				"pageName": "Conditions",
+				"conditions": "condition"
+			}
+		],
+		"CARVANA_INPUT_FIELDS": ["mileage"]
+	},
+	"VROOM": {
+		"URL": "https://www.vroom.com/sell/vehicleInformation/",
+		"VROOM_DEFAULT_VALUE_OBJ": {
+			"car_keys": { "values": ["1", "2+"], "defaultValue": "1" },
+			"has_been_in_accident": { "values": ["Yes", "No"], "defaultValue": "No" },
+			"vehicle_smoked_in": { "values": ["Yes", "No"], "defaultValue": "No" },
+			"exterior_damage": { "values": ["Above Average", "Average", "Below Average"], "defaultValue": "Average" },
+			"after_market_modifications": {
+				"values": ["Stereo System", "Suspension", "Wheels and tires", "Performance", "Exhaust", "Other"],
+				"defaultValue": "No"
+			},
+			"drivableCondition": { "values": ["Yes", "No"], "defaultValue": "No" },
+			"vehicle_condition": { "values": ["Above Average", "Average", "Below Average"], "defaultValue": "Average" }
+		},
+		"VROOM_FIELDS_TO_BE_CHECKED": [
+			"mileage",
+			"car_keys",
+			"has_been_in_accident",
+			"vehicle_smoked_in",
+			"exterior_damage",
+			"after_market_modifications",
+			"drivableCondition",
+			"vehicle_condition"
+		],
+		"VROOM_STEPS": {
+			"Vehicle Information": "1",
+			"Vehicle History": "2",
+			"Interior Condition": "2",
+			"Exterior Condition": "4",
+			"Mechanical Condition": "5",
+			"Your Information": "6"
+		},
+		"VROOM_INPUT_FIELDS": ["name", "phone_number"]
+	}
+}

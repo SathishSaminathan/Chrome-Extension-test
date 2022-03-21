@@ -1,0 +1,32 @@
+{
+	"name": "Trader Desktop Tool Test",
+	"version": "1.0",
+	"description": "Trader Desktop Tool Test",
+	"action": {
+		"default_title": "Trader Desktop Tool Test",
+		"default_popup": "popup.html"
+	},
+	"web_accessible_resources": [
+		{
+			"resources": ["config.json"],
+			"matches": [],
+			"extension_ids": []
+		}
+	],
+	"permissions": ["storage", "activeTab", "scripting"],
+	"host_permissions": ["<all_urls>"],
+	"content_scripts": [
+		{
+			"matches": ["https://www.carvana.com/*"],
+			"js": ["jquery-3.1.0.min.js", "axios.min.js", "popup.js", "background.js"]
+		}
+	],
+	"manifest_version": 3,
+	"icons": {
+		"128": "images/car_128.png",
+		"48": "images/car_48.png",
+		"32": "images/car_32.png",
+		"16": "images/car_16.png"
+	},
+	"background": [{ "script": "background.js" }]
+}
